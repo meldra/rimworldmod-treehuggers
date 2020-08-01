@@ -10,7 +10,6 @@
     using RimWorld;
     using HarmonyLib;
     using Verse;
-    using System.Diagnostics;
 
     [DefOf]
     public static class MyDefOf
