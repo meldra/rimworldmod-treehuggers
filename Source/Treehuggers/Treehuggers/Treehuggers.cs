@@ -10,6 +10,7 @@
     using RimWorld;
     using HarmonyLib;
     using Verse;
+    using System.Diagnostics;
 
     [DefOf]
     public static class MyDefOf
@@ -86,8 +87,8 @@
             List<Apparel> wornApparel = p.apparel.WornApparel;
             for (int i = 0; i < wornApparel.Count; i++)
             {
-                if (wornApparel[i].Stuff.defName.Contains("Wool"))
-                //if (wornApparel[i].Stuff.)
+                if (wornApparel[i].Stuff != null
+                && wornApparel[i].Stuff.defName.Contains("Wool"))
                 {
                     if (text == null)
                     {
@@ -117,7 +118,8 @@
             List<Apparel> wornApparel = p.apparel.WornApparel;
             for (int i = 0; i < wornApparel.Count; i++)
             {
-                if (wornApparel[i].Stuff.IsLeather)
+                if (wornApparel[i].Stuff != null
+                && wornApparel[i].Stuff.IsLeather)
                 {
                     if (text == null)
                     {

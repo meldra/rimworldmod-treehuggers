@@ -1,4 +1,4 @@
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rimworldmod-treehuggers\Assemblies\Treehuggers.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rimworldmod-treehuggers\Source\Treehuggers\Treehuggers\obj\Debug\Treehuggers.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rimworldmod-treehuggers\Source\Treehuggers\Treehuggers\obj\Debug\Treehuggers.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rimworldmod-treehuggers\Source\Treehuggers\Treehuggers\obj\Debug\Treehuggers.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rimworldmod-treehuggers\Source\Treehuggers\Treehuggers\obj\Debug\Treehuggers.csprojAssemblyReference.cache
