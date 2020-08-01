@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThoughtDef>
+    <defName>VeganInLeather</defName>
+    <workerClass>Treehuggers.ThoughtWorker_AnyLeatherApparel</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Vegan</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>vegan sorry</label>
+        <description>I should not be wearing leather. The animals deserved better.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+      <li>
+        <label>vegan violated</label>
+        <description>Two pieces of leather clothing. Why must this happen to them? To me? Make it stop!</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>vegan nightmare</label>
+        <description>Three leather items... Is there anything left of my morals?</description>
+        <baseMoodEffect>-9</baseMoodEffect>
+      </li>
+      <li>
+        <label>I am clad in murder</label>
+        <description>All this leather apparel, this is against everything I stood for, my integrity is all gone.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>VeganInWool</defName>
+    <workerClass>Treehuggers.ThoughtWorker_AnyWoolApparel</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Vegan</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>vegan itchy</label>
+        <description>I hate wearing wool. This fiber belongs to the animal.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+      <li>
+        <label>vegan annoyed</label>
+        <description>Two pieces of wool clothing. We can get perfectly good cloth from plants.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>vegan upset</label>
+        <description>Three wool items... We shouldn't be exploiting animals for clothing.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+      <li>
+        <label>vegan offended</label>
+        <description>I can't abide all this wool apparel, please make it stop.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
