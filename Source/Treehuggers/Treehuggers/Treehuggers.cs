@@ -20,7 +20,6 @@
         public static ThoughtDef AteAnimalProductTreehugger;
         public static ThoughtDef HurtAnAnimalTreehugger;
         public static ThingCategoryDef AnimalProductRaw = DefDatabase<ThingCategoryDef>.GetNamed("AnimalProductRaw");
-        //public static ThingCategoryDef AllAnimals = DefDatabase<Thing>.GetNamed("Animal");
 
         static MyDefOf()
         {
