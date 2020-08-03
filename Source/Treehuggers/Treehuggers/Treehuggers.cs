@@ -86,6 +86,8 @@
             Pawn victim = __instance as Pawn;
             if (attacker == null || victim == null) return;
             if (attacker.RaceProps.Humanlike
+            && !victim.RaceProps.Humanlike
+            && !victim.RaceProps.IsMechanoid
             && (attacker.story.traits.HasTrait(MyDefOf.Vegan) || attacker.story.traits.HasTrait(MyDefOf.Vegetarian)))
             {
                 attacker.needs.mood.thoughts.memories.TryGainMemory(MyDefOf.HurtAnAnimalTreehugger, victim);
