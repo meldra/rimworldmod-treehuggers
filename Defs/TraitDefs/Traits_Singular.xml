@@ -3,7 +3,7 @@
   
   <TraitDef>
     <defName>Vegetarian</defName>
-    <commonality>2.0</commonality>
+    <commonality>3</commonality>
 	<forcedPassions>
       <li>Plants</li>
     </forcedPassions>
@@ -35,7 +35,7 @@
 
   <TraitDef>
     <defName>Vegan</defName>
-    <commonality>2.0</commonality>
+    <commonality>1.5</commonality>
 	<forcedPassions>
       <li>Plants</li>
     </forcedPassions>
