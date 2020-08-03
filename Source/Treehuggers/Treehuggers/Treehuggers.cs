@@ -18,6 +18,7 @@
         public static TraitDef Vegetarian;
         public static ThoughtDef AteMeatTreehugger;
         public static ThoughtDef AteAnimalProductTreehugger;
+        public static ThoughtDef AteUnknownIngredientsTreehugger;
         public static ThoughtDef HurtAnAnimalTreehugger;
         public static ThingCategoryDef AnimalProductRaw = DefDatabase<ThingCategoryDef>.GetNamed("AnimalProductRaw");
 
@@ -49,6 +50,7 @@
 
         public static void AddTreehuggerRawFoodThoughts_Postfix(Pawn ingester, Thing foodSource, ThingDef foodDef, ref List<ThoughtDef> ___ingestThoughts)
         {
+            CompIngredients compIngredients = foodSource.TryGetComp<CompIngredients>();
             if (foodDef.IsMeat
             && ingester.RaceProps.Humanlike
             && (ingester.story.traits.HasTrait(MyDefOf.Vegetarian) || ingester.story.traits.HasTrait(MyDefOf.Vegan)))
@@ -60,6 +62,10 @@
             && ingester.story.traits.HasTrait(MyDefOf.Vegan))
             {
                 ___ingestThoughts.Add(MyDefOf.AteAnimalProductTreehugger);
+            }
+            else if (compIngredients != null)
+            {
+                ___ingestThoughts.Add(MyDefOf.AteUnknownIngredientsTreehugger);
             }
         }
 
