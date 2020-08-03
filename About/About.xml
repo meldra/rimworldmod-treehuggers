@@ -10,7 +10,7 @@
 	
 This mod introduces the vegan and vegetarian traits to drive you up the wall and around the bend with their picky eating and their protests about wearing dead animals.
 
-The less dedicated vegetarians will just complain about eating meat and helping you butcher, but the vegans will protest all animal products.
+The less dedicated vegetarians will just complain about eating meat and will refuse to go hunting or do animal handling because it involves slaughter, but the vegans will also protest eating or wearing animal products and will refuse to even partake in cooking as it involves butchery. Neither trait is incapable of violence.
 
 Your treehuggers just want you to stop exploiting animals. Is that really so much to ask?
 
@@ -19,6 +19,8 @@ This is Rimworld, after all. So realistically, you're probably just going to far
 github: https://github.com/meldra/rimworldmod-treehuggers
 
 Buyer beware: This is my first mod that is more than just XML and I'm new to C#. I've tested it but I still expect there'll be issues. Please lodge any bugs on the github with as much detail as you can.
+
+Credits: Huge thanks to all who patiently helped me with my questions in the modding channels on discord, especially Ogliss for the helpful PMs. I couldn't have done this without you.
 
 If you want some mods to help keep your treehuggers happy, check out my other mods on the workshop:
 
