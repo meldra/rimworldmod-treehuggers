@@ -5,7 +5,7 @@
     <defName>HurtAnAnimalTreehugger</defName>
     <showBubble>true</showBubble>
     <icon>Things/Mote/ThoughtSymbol/Skull</icon>
-    <durationDays>1</durationDays>
+    <durationDays>2</durationDays>
     <requiredTraits>
       <li>Vegan</li>
 	  <li>Vegetarian</li>
