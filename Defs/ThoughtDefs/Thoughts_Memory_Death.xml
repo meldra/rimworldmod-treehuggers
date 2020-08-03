@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>HurtAnAnimalTreehugger</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <durationDays>1</durationDays>
+    <requiredTraits>
+      <li>Vegan</li>
+	  <li>Vegetarian</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>that poor animal</label>
+        <description>I hurt an animal. How could I?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>
