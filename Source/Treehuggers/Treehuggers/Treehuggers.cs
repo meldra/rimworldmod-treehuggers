@@ -18,7 +18,9 @@
         public static TraitDef Vegetarian;
         public static ThoughtDef AteMeatTreehugger;
         public static ThoughtDef AteAnimalProductTreehugger;
+        public static ThoughtDef HurtAnAnimalTreehugger;
         public static ThingCategoryDef AnimalProductRaw = DefDatabase<ThingCategoryDef>.GetNamed("AnimalProductRaw");
+        //public static ThingCategoryDef AllAnimals = DefDatabase<Thing>.GetNamed("Animal");
 
         static MyDefOf()
         {
@@ -39,6 +41,9 @@
 
             harmony.Patch(original: AccessTools.Method(type: typeof(FoodUtility), name: "AddIngestThoughtsFromIngredient"), prefix: null,
                 postfix: new HarmonyMethod(methodType: patchType, methodName: nameof(AddTreehuggerMealFoodThoughts_Postfix)));
+
+            harmony.Patch(original: AccessTools.Method(type: typeof(Thing), name: nameof(Thing.TakeDamage)), prefix: null,
+                postfix: new HarmonyMethod(methodType: patchType, methodName: nameof(AddTreehuggerHurtAnimalMemory_Postfix)));
 
             harmony.PatchAll();
         }
@@ -74,13 +79,24 @@
                 ingestThoughts.Add(MyDefOf.AteAnimalProductTreehugger);
             }
         }
+
+        public static void AddTreehuggerHurtAnimalMemory_Postfix(Thing __instance, DamageInfo dinfo)
+        {
+            Pawn attacker = dinfo.Instigator as Pawn;
+            Pawn victim = __instance as Pawn;
+            if (attacker == null || victim == null) return;
+            if (attacker.RaceProps.Humanlike
+            && (attacker.story.traits.HasTrait(MyDefOf.Vegan) || attacker.story.traits.HasTrait(MyDefOf.Vegetarian)))
+            {
+                attacker.needs.mood.thoughts.memories.TryGainMemory(MyDefOf.HurtAnAnimalTreehugger, victim);
+            }
+        }
     }
 
     public class ThoughtWorker_AnyWoolApparel : ThoughtWorker
     {
         protected override ThoughtState CurrentStateInternal(Pawn p)
-        {       
-
+        {
             string text = null;
             int num = 0;
             List<Apparel> wornApparel = p.apparel.WornApparel;
