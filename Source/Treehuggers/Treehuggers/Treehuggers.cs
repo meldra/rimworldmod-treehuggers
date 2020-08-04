@@ -63,7 +63,7 @@
             {
                 ___ingestThoughts.Add(MyDefOf.AteAnimalProductTreehugger);
             }
-            else if (compIngredients != null)
+            else if (compIngredients != null && compIngredients.ingredients.Count < 1)
             {
                 ___ingestThoughts.Add(MyDefOf.AteUnknownIngredientsTreehugger);
             }
