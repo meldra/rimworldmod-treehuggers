@@ -42,7 +42,6 @@
 	<disabledWorkTags>
 	  <li>Animals</li>
 	  <li>Hunting</li>
-	  <li>Cooking</li>
 	</disabledWorkTags>
     <degreeDatas>
       <li>
@@ -66,7 +65,6 @@
 	<disabledWorkTypes>
       <li>Hunting</li>
 	  <li>Handling</li>
-	  <li>Cooking</li>
     </disabledWorkTypes>
   </TraitDef>
 
