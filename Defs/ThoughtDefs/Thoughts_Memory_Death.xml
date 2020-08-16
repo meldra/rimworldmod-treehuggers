@@ -19,4 +19,24 @@
     </stages>
   </ThoughtDef>
   
+  <ThoughtDef>
+    <defName>ButcheredCreatureCorpseTreehugger</defName>
+	<showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <durationDays>1</durationDays>
+    <stackLimit>10</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <requiredTraits>
+      <li>Vegan</li>
+	  <li>Vegetarian</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>I butchered a creature</label>
+        <description>I butchered a creature that shouldn't be dead in the first place.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
 </Defs>
