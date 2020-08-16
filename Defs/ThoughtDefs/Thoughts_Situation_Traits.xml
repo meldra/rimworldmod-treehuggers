@@ -62,5 +62,37 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>TreehuggerCarryingMeat</defName>
+    <workerClass>Treehuggers.ThoughtWorker_MeatInInventory</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Vegan</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Carrying meat</label>
+        <description>Carrying the flesh of a dead creature.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TreehuggerCarryingCreatureCorpse</defName>
+    <workerClass>Treehuggers.ThoughtWorker_CorpseInInventory</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Vegan</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Carrying a dead creature</label>
+        <description>I'm carrying a dead creature. It deserved life!</description>
+        <baseMoodEffect>-7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 
 </Defs>
