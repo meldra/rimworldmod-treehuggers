@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- general -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+			<li>[FSF] Complex Jobs (Legacy Version)</li>
+			<li>[FSF] Complex Jobs</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>			
+                <li Class="PatchOperationReplace">
+					<xpath>/Defs/TraitDef[defName="Vegan"]/disabledWorkTags</xpath>
+					<value>
+						<disabledWorkTags>
+						  <li>Animals</li>
+						  <li>Hunting</li>
+						</disabledWorkTags>
+					</value>
+                </li>
+                <li Class="PatchOperationReplace">
+					<xpath>/Defs/TraitDef[defName="Vegan"]/disabledWorkTypes</xpath>
+					<value>
+						<disabledWorkTypes>
+						  <li>Hunting</li>
+						  <li>Handling</li>
+						  <li>FSFButcher</li>
+						</disabledWorkTypes>
+					</value>
+                </li>
+			</operations>
+        </match>
+	</Operation>
+
+</Patch>
