@@ -11,7 +11,7 @@
     <degreeDatas>
       <li>
         <label>vegetarian</label>
-        <description>{PAWN_nameDef} hates the idea of eating other creatures. {PAWN_pronoun} will if necessary for survival, but {PAWN_pronoun} will be unhappy about it.</description>
+        <description>{PAWN_nameDef} hates hurting and eating other creatures. {PAWN_pronoun} will if necessary for survival, but {PAWN_pronoun} will be unhappy about it.</description>
 		<disallowedMentalStates>
           <li>Slaughterer</li>
 		</disallowedMentalStates>
