@@ -107,16 +107,12 @@
 
         public static void AddTreehuggerButcheredAnimalMemory_Postfix(Thing __instance, Pawn butcher)
         {
-            Log.Message("hi1");
             if (__instance is Corpse corpse)
             {
-                Log.Message("hi2");
                 if (!corpse.InnerPawn.RaceProps.Humanlike)
                 {
-                    Log.Message("Hi3");
                     if (butcher.needs.mood != null)
                     {
-                        Log.Message("Hi4");
                         butcher.needs.mood.thoughts.memories.TryGainMemory(MyDefOf.ButcheredCreatureCorpseTreehugger, null);
                     }
                 }
