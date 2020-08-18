@@ -83,7 +83,7 @@
             {
                 ingestThoughts.Add(MyDefOf.AteMeatTreehugger);
             }
-            else if (!ingredient.thingCategories.Contains(MyDefOf.AnimalProductRaw)
+            else if (ingredient.thingCategories.Contains(MyDefOf.AnimalProductRaw)
             && ingester.RaceProps.Humanlike
             && ingester.story.traits.HasTrait(MyDefOf.Vegan))
             {
