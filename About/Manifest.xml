@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <Manifest>
 	<identifier>Treehuggers</identifier>
-	<version>0.4</version>
+	<version>0.5</version>
 	<dependencies />
 	<incompatibleWith />
 	<showCrossPromotions>true</showCrossPromotions>
