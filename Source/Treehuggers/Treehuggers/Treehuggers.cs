@@ -57,7 +57,7 @@
         public static void AddTreehuggerRawFoodThoughts_Postfix(Pawn ingester, Thing foodSource, ThingDef foodDef, ref List<ThoughtDef> ___ingestThoughts)
         {
             CompIngredients compIngredients = foodSource.TryGetComp<CompIngredients>();
-            if (foodDef.IsMeat
+            if ((foodDef.IsMeat || foodDef.FirstThingCategory.parent.defName.Contains("MeatRaw"))
             && ingester.RaceProps.Humanlike
             && (ingester.story.traits.HasTrait(MyDefOf.Vegetarian) || ingester.story.traits.HasTrait(MyDefOf.Vegan)))
             {
@@ -77,7 +77,7 @@
 
         public static void AddTreehuggerMealFoodThoughts_Postfix(ThingDef ingredient, Pawn ingester, List<ThoughtDef> ingestThoughts)
         {
-            if (ingredient.IsMeat
+            if ((ingredient.IsMeat || ingredient.FirstThingCategory.parent.defName.Contains("MeatRaw"))
             && ingester.RaceProps.Humanlike
             && (ingester.story.traits.HasTrait(MyDefOf.Vegetarian) || ingester.story.traits.HasTrait(MyDefOf.Vegan)))
             {
